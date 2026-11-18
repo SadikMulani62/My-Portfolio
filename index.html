@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadik Mulani | Software Engineering Portfolio</title>
+    <!-- Tailwind CSS CDN for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- AOS Scroll Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Saare sections ke liye scroll spacing fix karne ke liye */
+        section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <!-- Logo / Name -->
+            <a href="#" class="text-lg font-bold text-white tracking-wide">
+                Sadik <span class="text-blue-500">Mulani</span>
+            </a>
+
+            <!-- Nav Links (Mobile & PC Friendly) -->
+            <div
+                class="flex flex-wrap justify-center items-center gap-4 md:gap-8 text-xs md:text-sm text-slate-300 font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero / Intro Section -->
+    <section id="home" class="py-20 md:py-28 max-w-5xl mx-auto px-6 text-center" data-aos="fade-down">
+
+        <!-- Profile Picture -->
+        <div class="mb-8 flex justify-center">
+            <div
+                class="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-r from-blue-500 to-indigo-500 shadow-xl shadow-blue-500/20">
+                <img src="Linkedin-Profile.png" alt="Sadik Mulani"
+                    class="w-full h-full object-cover rounded-full bg-slate-900">
+            </div>
+        </div>
+        <!-- Status Badge -->
+        <div
+            class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-xs font-medium mb-8">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            Open for Software Engineering Internships
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Sadik
+                Mulani</span>
+        </h1>
+
+        <!-- Short Intro / Bio -->
+        <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-10">
+            Aspiring Software Engineer & Computer Science Student at College of Computer Science and Information
+            Technology, Latur. Passionate about Java backend, databases, and DSA.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://github.com/SadikMulani62" target="_blank"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-blue-600/30 text-sm flex items-center gap-2">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                GitHub Profile
+            </a>
+            <a href="#contact"
+                class="border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium px-6 py-3 rounded-xl transition text-sm">
+                Get in Touch
+            </a>
+        </div>
+
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-28 max-w-4xl mx-auto px-6">
+        <div data-aos="fade-up"
+            class="bg-slate-900 border border-slate-800 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition duration-300 p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+            <div
+                class="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 group-hover:bg-blue-500/10 transition duration-300 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+
+            <div class="space-y-4 text-slate-300 text-base leading-relaxed">
+                <p>
+                    <strong class="text-white font-medium">Welcome to my portfolio!</strong> I am a passionate Computer
+                    Science student pursuing my Bachelor of Science (B.Sc.) Computer Science degree at the College of
+                    Computer Science and Information Technology, Latur. My core focus lies in building a strong
+                    foundation in software engineering, backend development, and computer science fundamentals.
+                </p>
+                <p>
+                    I actively practice algorithmic problem-solving using <strong
+                        class="text-white font-medium">Java</strong> and maintain a structured DSA practice repository
+                    on GitHub. My learning approach revolves around understanding underlying concepts deeply, writing
+                    clean code, and solving real-world logical problems.
+                </p>
+                <p>
+                    Currently, I am expanding my technical skills in database management (MySQL) and object-oriented
+                    programming, with an aspiration to grow as a skilled Software Engineer and Java Backend Developer.
+                </p>
+            </div>
+
+            <!-- Quick Info Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 pt-8 border-t border-slate-800 text-sm">
+                <div>
+                    <span class="block text-slate-500 text-xs uppercase tracking-wider mb-1">Location</span>
+                    <span class="text-white font-medium">Latur, Maharashtra, India</span>
+                </div>
+                <div>
+                    <span class="block text-slate-500 text-xs uppercase tracking-wider mb-1">Education</span>
+                    <span class="text-white font-medium">B.Sc. Computer Science</span>
+                </div>
+                <div>
+                    <span class="block text-slate-500 text-xs uppercase tracking-wider mb-1">Primary Focus</span>
+                    <span class="text-white font-medium">Java & DSA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-28 max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-4 text-center">Technical Skills</h2>
+        <p class="text-slate-400 text-center mb-12 max-w-xl mx-auto">Core programming languages, computer science
+            fundamentals, and development tools I work with.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Category 1: Programming -->
+            <div data-aos="fade-up" data-aos-delay="100"
+                class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition group">
+                <div
+                    class="w-10 h-10 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3">Programming</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Core
+                        Java</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Java
+                        Collections</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Clean
+                        Code Practices</li>
+                </ul>
+            </div>
+
+            <!-- Category 2: Core Concepts -->
+            <div data-aos="fade-up" data-aos-delay="200"
+                class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition group">
+                <div
+                    class="w-10 h-10 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 transition">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-0-5H20" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3">Core Concepts</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                        Data Structures & Algorithms (DSA)</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                        Object-Oriented Programming (OOP)</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                        Algorithmic Problem Solving</li>
+                </ul>
+            </div>
+
+            <!-- Category 3: Databases -->
+            <div data-aos="fade-up" data-aos-delay="300"
+                class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition group">
+                <div
+                    class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3">Databases</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        MySQL</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        SQL Queries</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Database Management</li>
+                </ul>
+            </div>
+
+            <!-- Category 4: Tools & IDEs -->
+            <div data-aos="fade-up" data-aos-delay="400"
+                class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition group">
+                <div
+                    class="w-10 h-10 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 mb-4 group-hover:scale-110 transition">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3">Tools & IDEs</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span> Git
+                        & GitHub</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                        IntelliJ IDEA</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                        Visual Studio Code</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 min-h-[90vh] flex flex-col justify-center max-w-5xl mx-auto px-6"
+        data-aos="fade-up">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center text-slate-200">
+            Featured <span class="text-blue-500">Projects</span>
+        </h3>
+
+        <!-- Grid Container for Projects -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Project Card 1: Java DSA Practice -->
+            <div
+                class="bg-slate-900 border border-slate-800 p-8 rounded-xl hover:border-blue-500 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-blue-950 text-blue-400 rounded-full border border-blue-800">Java
+                            & DSA</span>
+                        <span class="text-xs text-slate-500">GitHub Repository</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-100 mb-2">Java-DSA-Practice</h4>
+                    <p class="text-slate-400 text-sm mb-6">
+                        A structured repository containing clean, well-documented Java solutions for Data Structures and
+                        Algorithms, categorized topic-wise (Arrays, Strings, Two-Pointers).
+                    </p>
+                </div>
+                <div>
+                    <a href="https://github.com/SadikMulani62/Java-DSA-Practice" target="_blank"
+                        class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm transition">
+                        View Repository &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Placeholder for Future Project (Spring Boot / MySQL) -->
+            <div
+                class="bg-slate-900 border border-slate-800 p-8 rounded-xl hover:border-slate-700 transition flex flex-col justify-between opacity-75">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-slate-800 text-slate-400 rounded-full border border-slate-700">Backend
+                            / Coming Soon</span>
+                        <span class="text-xs text-slate-500">Database & API</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-100 mb-2">Java Backend Project</h4>
+                    <p class="text-slate-400 text-sm mb-6">
+                        Upcoming database-backed application featuring MySQL integration, RESTful APIs, and structured
+                        data handling.
+                    </p>
+                </div>
+                <div>
+                    <span class="text-xs text-slate-500 font-medium">In Progress...</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education, Certifications & Achievements Section -->
+    <section id="education"
+        class="py-20 min-h-[90vh] flex flex-col justify-center bg-slate-900/50 border-t border-slate-800 px-6"
+        data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center" data-aos="fade-up">Education & Achievements</h2>
+
+            <!-- Grid with 3 Columns -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1: Academic Degree -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition p-8 rounded-2xl flex flex-col justify-between"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-3 bg-blue-500/10 rounded-lg text-blue-400">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                </svg>
+                            </div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-400">Academic
+                                Degree</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Bachelor of Science (B.Sc.) in Computer Science
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-4">College of Computer Science and Information Technology,
+                            Latur</p>
+                        <div class="flex flex-wrap items-center gap-2 text-xs font-medium mb-6">
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1.5 rounded-full">2025 – 2028
+                                (Pursuing)</span>
+                            <span
+                                class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1.5 rounded-full">1st
+                                Year CGPA: 8.14</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 text-xs text-slate-400">
+                        Focusing on core computer science fundamentals.
+                    </div>
+                </div>
+
+                <!-- Card 2: Alpha Certificate -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition p-8 rounded-2xl flex flex-col justify-between"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-3 bg-amber-500/10 rounded-lg text-amber-400">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="6" />
+                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                                </svg>
+                            </div>
+                            <span
+                                class="text-xs font-semibold uppercase tracking-wider text-amber-400">Certification</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Alpha (DSA with Java)</h3>
+                        <p class="text-slate-400 text-sm mb-4">Successfully completed rigorous training in Core Java,
+                            OOP, and Data Structures & Algorithms from Apna College.</p>
+                        <div class="flex flex-wrap items-center gap-2 text-xs font-medium mb-6">
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Core Java</span>
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">DSA</span>
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">OOPs</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800">
+                        <a href="Certificates/alpha-certificate.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-medium text-amber-400 hover:text-amber-300 transition">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            View Alpha (DSA with Java) Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: LeetCode 50 Days Badge -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition p-8 rounded-2xl flex flex-col justify-between"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-3 bg-amber-500/10 rounded-lg text-amber-400">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="6" />
+                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                                </svg>
+                            </div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">Milestone
+                                Badge</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">LeetCode 50 Days Badge (2026)</h3>
+                        <p class="text-slate-400 text-sm mb-4">Awarded for solving algorithmic problems consistently for
+                            50+ days on LeetCode with strong dedication.</p>
+                        <div class="flex flex-wrap items-center gap-2 text-xs font-medium mb-6">
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Consistency</span>
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">DSA</span>
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800">
+                        <a href="Certificates/Leetcode-badge.png" target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-medium text-amber-400 hover:text-amber-300 transition">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            View LeetCode 50 Days Badge
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-28 px-8 max-w-4xl mx-auto text-center border-t border-slate-800">
+        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-slate-200">
+            Let's <span class="text-blue-500">Connect</span>
+        </h3>
+        <p class="text-slate-400 mb-8 max-w-xl mx-auto text-sm md:text-base">
+            I'm actively looking for Java Backend and Software Engineering Internship opportunities. Feel free to reach
+            out via email or connect with me on professional platforms!
+        </p>
+
+        <!-- Direct Contact Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <!-- Email Button -->
+            <a href="mailto:mulanisadik922@gmail.com"
+                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-blue-600/30 text-sm">
+                <svg class="w-4 h-4 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                mulanisadik922@gmail.com
+            </a>
+
+            <!-- LinkedIn Button -->
+            <a href="https://linkedin.com/in/Sadikmulani" target="_blank"
+                class="inline-flex items-center gap-2 border border-slate-700 hover:border-blue-500 text-slate-300 hover:text-blue-400 font-medium px-6 py-3 rounded-lg transition text-sm">
+                <svg class="w-4 h-4 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn Profile
+            </a>
+
+            <!-- GitHub Button -->
+            <a href="https://github.com/SadikMulani62" target="_blank"
+                class="inline-flex items-center gap-2 border border-slate-700 hover:border-blue-500 text-slate-300 hover:text-blue-400 font-medium px-6 py-3 rounded-lg transition text-sm">
+                <svg class="w-4 h-4 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                GitHub Profile
+            </a>
+
+            <!-- LeetCode Button -->
+            <a href="https://leetcode.com/u/1PvGF6FB37/" target="_blank"
+                class="inline-flex items-center gap-2 border border-slate-700 hover:border-amber-500 text-slate-300 hover:text-amber-400 font-medium px-6 py-3 rounded-lg transition text-sm">
+                <svg class="w-4 h-4 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                </svg>
+                LeetCode Profile
+            </a>
+
+        </div>
+
+        <!-- Copyright Footer -->
+        <p class="text-xs text-slate-600">
+            © 2026 Sadik Mulani. Built with HTML & Tailwind CSS.
+        </p>
+    </section>
+
+    <!-- Activate Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1400,
+            easing: 'ease-out-cubic',
+            once: true,
+            mirror: true,
+            offset: 80
+        });
+    </script>
+
+</body>
+
+</html>
